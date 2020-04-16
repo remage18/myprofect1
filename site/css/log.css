@@ -1,0 +1,125 @@
+body {
+    background: #303030;
+    font-family: 'Open Sans', sans-serif;
+    color: #777;
+}
+
+a {
+    color: #777;
+    font-weight: 400;
+    outline: none;
+    text-decoration: none;
+}
+
+a:hover{
+    border-bottom: 1px solid #777777;
+}
+
+span {
+    font-weight: 300;
+    color: #f58220;
+}
+
+.mlogin {
+    margin: 100px auto 0;
+}
+
+.mregister {
+    margin: 50px auto 0;
+}
+
+.error {
+    margin: 40px auto 0;
+    border: 1px solid #777;
+    padding: 3px;
+    color: #fff;
+    text-align: center;
+    width: 650px;
+    background: #f58220;
+}
+
+.regtext {
+    text-align: center;
+    border-top: 1px solid #303030 ;
+    font-size: 18px;
+    margin-top: 26px;
+    padding-top: 15px;
+    color: #ffffff;
+}
+
+.container {
+    padding: 25px 16px 0 10px;
+    font-weight: 400;
+    overflow: hidden;
+    width: 350px;
+    height: auto;
+    background: #161616;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.13);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.13);
+    box-shadow: 0 1px 3px rgba(0,0,0,.13);
+}
+
+#welcome {
+    width: 500px;
+    padding: 30px;
+    background: #fff;
+    margin: 160px auto 0;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.13);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.13);
+    box-shadow: 0 1px 3px rgba(0,0,0,.13);
+}
+
+.container h1 {
+    color: #ffffff;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 13px;
+}
+
+.container label {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+#login {
+    width: 320px;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+.container form .input,.container input[type=text],.container input[type=password],.container input[type=e] {
+    background: #303030;
+    font-size: 24px;
+    line-height: 1;
+    width: 100%;
+    padding: 3px;
+    margin: 0 6px 5px 0;
+    outline: none;
+    border: 1px solid #161616;
+}
+
+.container form .input:focus {
+    border: 1px solid #f58220;
+    -webkit-box-shadow: 0 0 3px 0 rgba(245,130,32,0.75);
+    -moz-box-shadow: 0 0 3px 0 rgba(245,130,32,0.75);
+    box-shadow: 0 0 3px 0 rgba(245,130,32,0.75);
+}
+
+.button{
+    border: 1px solid #161616;
+    background: #F50F0F;
+    width: 328px;
+    height: 40px;
+    color: #fff;
+    padding: 7px 12px;
+    cursor: pointer;
+}
+
+.submit{
+    padding-top: 10px;
+}
+
+.button:hover{
+    background: #303030;
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
+}

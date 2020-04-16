@@ -1,0 +1,782 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins|Press+Start+2P&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    outline: none;
+    text-decoration: none;
+}
+
+
+body, html{
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    padding: 0 100px;
+    height: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s all;
+    position: fixed;
+    z-index: 9999;
+    background-color: #303030;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid black;
+}
+
+header .logo a{
+    color: white;
+    font-family: 'Press Start 2p', sans-serif;
+    font-size: 25px;
+}
+
+header a:hover{
+    opacity: 0.8;
+}
+
+header nav{
+    display: flex;
+    padding-bottom: 4px;
+}
+
+header .item{
+    padding-left: 30px;
+}
+
+header .item span{
+    font-size: 19px;
+    color: white;
+}
+
+#header_adaptive{
+    padding: 0 100px;
+    height: 100px;
+    display: none;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s all;
+    position: fixed;
+    z-index: 9999;
+    background-color: #303030;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid black;
+}
+
+#header_adaptive .menu{
+    display: none;
+}
+
+@media (max-width: 1260px) {
+    header{
+        display: none;
+    }
+    #header_adaptive{
+        display: flex;
+    }
+}
+
+@media (max-width: 800px){
+    #header_adaptive{
+        height: 75px;
+        padding: 0 60px;
+    }
+    #header_adaptive .logo a{
+        font-size: 20px;
+    }
+    #header_adaptive .item span{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    #header_adaptive{
+        height: 50px;
+        padding: 0 30px;
+    }
+    #header_adaptive .logo a{
+        font-size: 16px
+    }
+    #header_adaptive .item span{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 450px){
+    #header_adaptive nav{
+        display: none;
+    }
+    #header_adaptive .menu{
+        display: flex;
+    }
+}
+
+main{
+    padding-top: 100px;
+    transition: 1s all;
+}
+
+main .about{
+     background-color: #161616;
+     padding-top: 75px;
+    transition: 1s all;
+}
+
+main .about h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    text-align: center;
+    color: white;
+    transition: 1s all;
+}
+
+main .products{
+    padding: 75px 100px;
+    background-color: #161616;
+    height: auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    transition: 1s all;
+}
+
+main .col{
+    display: flex;
+    flex-flow: column;
+    transition: 1s all;
+}
+
+main .col p{
+    border-bottom: 1px solid #303030;
+    transition: 1s all;
+}
+
+main .products img{
+    height: 250px;
+    width: 250px;
+    transition: 1s all;
+}
+
+main .price{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    transition: 1s all;
+}
+
+main .price h1{
+    padding-top: 18px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    transition: 1s all;
+}
+
+main .price h2{
+    color: white;
+    font-size: 11px;
+    padding-bottom: 18px;
+    font-weight: normal;
+    transition: 1s all;
+}
+
+main .product_price{
+    display: flex;
+    flex-flow: row;
+    transition: 1s all;
+}
+
+main .button{
+    padding-left: 20px;
+    transition: 1s all;
+}
+
+main .pc_choice{
+    background-color: #F50F0F;
+    border: none;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 18px;
+    font-size: 14px;
+    margin: 18px auto 18px;
+    font-weight: bold;
+    transition: 1s all;
+}
+
+main .pc_choice:hover{
+    background-color: #303030;
+}
+
+main .block{
+    border-top: 1px solid #303030;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    padding: 16px 0;
+    transition: 1s all;
+}
+
+main .block img{
+    height: 32px;
+    width: 32px;
+    transition: 1s all;
+}
+
+main .block div{
+    display: flex;
+    flex-flow: column;
+    padding: 0 12px;
+    transition: 1s all;
+}
+
+main .block div p{
+    border: none;
+    color: white;
+    font-size: 11px;
+    padding-top: 2px;
+    font-weight: bold;
+    transition: 1s all;
+}
+
+main .shopping{
+    background-color: #303030;
+    height: 100px;
+    display: flex;
+    flex-flow: row;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s all;
+}
+
+main .shopping h1{
+    color: white;
+    font-family: 'Press Start 2p', sans-serif;
+    font-size: 25px;
+    transition: 1s all;
+}
+
+main .shopping h2{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    transition: 1s all;
+}
+
+main .shopping a:hover{
+    border-bottom: 1px solid white;
+    opacity: 0.8;
+}
+
+@media(max-width: 1250px){
+    main .products img{
+        height: 200px;
+        width: 200px;
+    }
+    main .price h1{
+        font-size: 14px;
+        padding-top: 16px;
+    }
+
+    main .price h2{
+        font-size: 9px;
+        padding-bottom: 16px;
+    }
+    main .pc_choice{
+        padding: 8px 16px;
+        font-size: 12px;
+        margin: 16px auto 16px;
+    }
+
+    main .block{
+        padding: 14px 0;
+    }
+
+    main .block img{
+        height: 28px;
+        width: 28px;
+    }
+
+    main .block div p{
+        font-size: 9px;
+    }
+
+    main .shopping{
+        height: 100px;
+    }
+
+    main .shopping h1{
+        font-size: 20px;
+    }
+
+    main .shopping h2{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 1100px){
+    main .products{
+        flex-flow: row wrap;
+        padding: 75px 150px;
+    }
+    main .products img{
+        height: 300px;
+        width: 300px;
+    }
+    main .price h1{
+        font-size: 18px;
+        padding-top: 18px;
+    }
+
+    main .price h2{
+        font-size: 13px;
+        padding-bottom: 16px;
+    }
+    main .pc_choice{
+        padding: 10px 22px;
+        font-size: 16px;
+        margin: 20px auto 18px;
+    }
+
+    main .button{
+        padding-left: 30px;
+    }
+
+    main .block{
+        padding: 16px 0;
+    }
+
+    main .block img{
+        height: 36px;
+        width: 36px;
+    }
+
+    main .block div p{
+        font-size: 13px;
+    }
+
+    main .shopping h1{
+        font-size: 25px;
+    }
+
+    main .shopping h2{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 950px){
+    main .products{
+        flex-flow: row wrap;
+        padding: 75px 80px;
+    }
+    main .products img{
+        height: 300px;
+        width: 300px;
+    }
+    main .price h1{
+        font-size: 18px;
+        padding-top: 18px;
+    }
+
+    main .price h2{
+        font-size: 13px;
+        padding-bottom: 16px;
+    }
+    main .pc_choice{
+        padding: 10px 22px;
+        font-size: 16px;
+        margin: 20px auto 18px;
+    }
+
+    main .button{
+        padding-left: 30px;
+    }
+
+    main .block{
+        padding: 16px 0;
+    }
+
+    main .block img{
+        height: 36px;
+        width: 36px;
+    }
+
+    main .block div p{
+        font-size: 13px;
+    }
+
+    main .shopping h1{
+        font-size: 20px;
+    }
+
+    main .shopping h2{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 800px){
+    main {
+        padding-top: 75px;
+    }
+    main .products{
+        padding: 75px 80px;
+    }
+    main .products img{
+        height: 250px;
+        width: 250px;
+    }
+    main .price h1{
+        font-size: 16px;
+        padding-top: 18px;
+    }
+
+    main .price h2{
+        font-size: 11px;
+        padding-bottom: 16px;
+    }
+    main .pc_choice{
+        padding: 8px 20px;
+        font-size: 14px;
+        margin: 20px auto 18px;
+    }
+
+    main .button{
+        padding-left: 20px;
+    }
+
+    main .block{
+        padding: 16px 0;
+    }
+
+    main .block img{
+        height: 32px;
+        width: 32px;
+    }
+
+    main .block div p{
+        font-size: 11px;
+    }
+
+    main .shopping{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    main .shopping h1{
+        font-size: 20px;
+    }
+
+    main .shopping h2{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 700px){
+    main .products img{
+        height: 200px;
+        width: 200px;
+    }
+    main .price h1{
+        font-size: 14px;
+        padding-top: 16px;
+    }
+
+    main .price h2{
+        font-size: 9px;
+        padding-bottom: 16px;
+    }
+    main .pc_choice{
+        padding: 8px 16px;
+        font-size: 12px;
+        margin: 16px auto 16px;
+    }
+
+    main .block{
+        padding: 14px 0;
+    }
+
+    main .block img{
+        height: 28px;
+        width: 28px;
+    }
+
+    main .block div p{
+        font-size: 9px;
+    }
+
+    main .shopping{
+        height: 75px;
+    }
+
+    main .shopping h1{
+        font-size: 15px;
+    }
+
+    main .shopping h2{
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 600px){
+    main {
+        padding-top: 50px;
+    }
+    main .about{
+        padding-top: 50px;
+    }
+    main .about h1{
+        font-size: 20px;
+    }
+    main .products{
+        justify-content: center;
+        align-items: center;
+        padding: 50px 80px;
+    }
+    main .products img{
+        height: 250px;
+        width: 250px;
+    }
+    main .price h1{
+        font-size: 16px;
+        padding-top: 18px;
+    }
+
+    main .price h2{
+        font-size: 11px;
+        padding-bottom: 16px;
+    }
+    main .pc_choice{
+        padding: 8px 20px;
+        font-size: 14px;
+        margin: 20px auto 18px;
+    }
+
+    main .button{
+        padding-left: 20px;
+    }
+
+    main .block{
+        padding: 16px 0;
+    }
+
+    main .block img{
+        height: 32px;
+        width: 32px;
+    }
+
+    main .block div p{
+        font-size: 11px;
+    }
+
+    main .shopping{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    main .shopping h1{
+        display: none;
+    }
+
+    main .shopping h2{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 450px){
+    main {
+        padding-top: 50px;
+    }
+    main .about{
+        padding-top: 30px;
+    }
+    main .about h1{
+        font-size: 15px;
+    }
+    main .products{
+        justify-content: center;
+        align-items: center;
+        padding: 30px 10px;
+    }
+    main .products img{
+        height: 250px;
+        width: 250px;
+    }
+    main .price h1{
+        font-size: 16px;
+        padding-top: 18px;
+    }
+
+    main .price h2{
+        font-size: 11px;
+        padding-bottom: 16px;
+    }
+    main .pc_choice{
+        padding: 8px 20px;
+        font-size: 14px;
+        margin: 20px auto 18px;
+    }
+
+    main .button{
+        padding-left: 20px;
+    }
+
+    main .block{
+        padding: 16px 0;
+    }
+
+    main .block img{
+        height: 32px;
+        width: 32px;
+    }
+
+    main .block div p{
+        font-size: 11px;
+    }
+
+    main .shopping{
+        padding-left: 25px;
+        padding-right: 25px;
+        height: 60px;
+    }
+
+    main .shopping h1{
+        display: none;
+    }
+
+    main .shopping h2{
+        font-size: 10px;
+    }
+}
+
+footer div{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+footer div h2{
+    color: white;
+    font-size: 20px;
+    padding: 40px 100px 0 100px;
+}
+
+footer div h3{
+    color: white;
+    font-size: 20px;
+    padding: 40px 185px 0 100px;
+}
+
+footer{
+    height: 200px;
+    background-color: #161616;
+}
+
+footer .social{
+    padding: 0 90px;
+}
+
+footer .social img{
+    height: 40px;
+    width: 40px;
+    padding: 30px 10px;
+}
+
+footer .status{
+    padding-right: 100px;
+}
+
+footer .status img{
+    height: 40px;
+    width: 100px;
+    padding: 30px 10px;
+}
+
+footer .contacts{
+    display: flex;
+    flex-flow: column;
+    padding-right: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer .contacts p{
+    text-align: right;
+    color: white;
+    font-size: 13px;
+}
+
+#footer_adaptive{
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    footer{
+        display: none;
+    }
+    #footer_adaptive{
+        display: block
+    }
+}
+
+@media (max-width: 800px) {
+    #footer_adaptive{
+        height: 165px;
+    }
+    #footer_adaptive div h2{
+        font-size: 18px;
+        padding: 30px 75px 0 75px;
+    }
+    #footer_adaptive div .social{
+        padding: 0 65px;
+    }
+    #footer_adaptive div .social img{
+        height: 35px;
+        width: 35px;
+        padding: 20px 8px;
+    }
+    #footer_adaptive div .contacts{
+        padding-right: 75px;
+        padding-top: 20px;
+    }
+    #footer_adaptive div .contacts p{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 600px) {
+    #footer_adaptive{
+        height: 135px;
+    }
+    #footer_adaptive div h2{
+        font-size: 15px;
+        padding: 35px 50px 0 50px;
+    }
+    #footer_adaptive div .social{
+        padding: 0 50px;
+    }
+    #footer_adaptive div .social img{
+        height: 25px;
+        width: 25px;
+        padding: 10px 8px;
+    }
+    #footer_adaptive div .contacts{
+        padding-right: 50px;
+        padding-top: 10px;
+    }
+    #footer_adaptive div .contacts p{
+        font-size: 9px;
+    }
+}

@@ -1,0 +1,1150 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins|Press+Start+2P&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    outline: none;
+    text-decoration: none;
+}
+
+
+body, html{
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    padding: 0 100px;
+    height: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s all;
+    position: fixed;
+    z-index: 9999;
+    background-color: #303030;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid black;
+}
+
+header .logo a{
+    color: white;
+    font-family: 'Press Start 2p', sans-serif;
+    font-size: 25px;
+}
+
+header a:hover{
+    opacity: 0.8;
+}
+
+header nav{
+    display: flex;
+    padding-bottom: 4px;
+}
+
+header .item{
+    padding-left: 30px;
+}
+
+header .item span{
+    font-size: 19px;
+    color: white;
+}
+
+#header_adaptive{
+    padding: 0 100px;
+    height: 100px;
+    display: none;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s all;
+    position: fixed;
+    z-index: 9999;
+    background-color: #303030;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid black;
+}
+
+#header_adaptive .menu{
+    display: none;
+}
+
+@media (max-width: 1260px) {
+    header{
+        display: none;
+    }
+    #header_adaptive{
+        display: flex;
+    }
+}
+
+@media (max-width: 800px){
+    #header_adaptive{
+        height: 75px;
+        padding: 0 60px;
+    }
+    #header_adaptive .logo a{
+        font-size: 20px;
+    }
+    #header_adaptive .item span{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    #header_adaptive{
+        height: 50px;
+        padding: 0 30px;
+    }
+    #header_adaptive .logo a{
+        font-size: 16px
+    }
+    #header_adaptive .item span{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 450px){
+    #header_adaptive nav{
+        display: none;
+    }
+    #header_adaptive .menu{
+        display: flex;
+    }
+}
+
+.info{
+    height: auto;
+    background: black;
+}
+
+
+main{
+    padding-top: 100px;
+    transition: 1s all;
+}
+
+main img{
+    width: 100%;
+    display: block;
+}
+
+main .about{
+    background-color: #303030;
+    padding-top: 75px;
+}
+
+main .about h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    text-align: center;
+    color: white;
+}
+
+main .info{
+    padding: 0 50px;
+    background-color: #303030;
+    display: flex;
+    flex-flow: row;
+}
+
+main .info div{
+    display: flex;
+    flex-flow: column wrap;
+    padding-left: 40px;
+    align-items: center;
+}
+
+main .info img{
+    height: 50px;
+    width: 50px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+main .info p{
+    color: white;
+    font-size: 15px;
+    padding-top: 2px;
+}
+
+main .info h1{
+    color: #F50F0F;
+    font-size: 36px;
+    padding-top: 65px;
+    font-family: 'Poppins', sans-serif;
+}
+
+main .button1{
+    background-color: #303030;
+    display: flex;
+    flex-flow: row;
+}
+main .pc_choice{
+    background-color: #F50F0F;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    justify-content: center;
+    padding: 16px 40px;
+    font-size: 14px;
+    margin: 60px auto 75px;
+    font-weight: bold;
+}
+
+main .pc_choice a{
+    color: white;
+}
+
+main .pc_choice a:hover{
+    opacity: 0.8;
+}
+
+@media (max-width: 1345px){
+    main .about{
+        padding-top: 70px;
+    }
+    main .about h1{
+        font-size: 24px;
+    }
+    main .info p{
+        font-size: 14px;
+    }
+    main .info div{
+        padding-left: 36px;
+    }
+    main .info h1{
+        font-size: 34px;
+        padding-top: 60px;
+    }
+    main .info img{
+        height: 45px;
+        width: 45px;
+        padding-top: 45px;
+    }
+    main .pc_choice{
+
+    }
+}
+
+@media (max-width: 1275px) {
+    main .about{
+        padding-top: 65px;
+    }
+    main .about h1{
+        font-size: 22px;
+    }
+    main .info p{
+        font-size: 13px;
+    }
+    main .info div{
+        padding-left: 32px;
+    }
+    main .info h1{
+        font-size: 32px;
+        padding-top: 55px;
+    }
+    main .info img{
+        height: 40px;
+        width: 40px;
+        padding-top: 40px;
+    }
+    main .pc_choice{
+
+    }
+}
+
+@media (max-width: 1175px) {
+    main .about{
+        padding-top: 60px;
+    }
+    main .about h1{
+        font-size: 20px;
+    }
+    main .info p{
+        font-size: 12px;
+    }
+    main .info div{
+        padding-left: 28px;
+    }
+    main .info h1{
+        font-size: 30px;
+        padding-top: 50px;
+    }
+    main .info img{
+        height: 36px;
+        width: 36px;
+        padding-top: 38px;
+    }
+    main .pc_choice{
+        padding: 14px 38px;
+        font-size: 14px;
+        margin: 55px auto 70px;
+    }
+}
+
+@media (max-width: 1085px) {
+    main .about{
+        padding-top: 55px;
+    }
+    main .about h1{
+        font-size: 18px;
+    }
+    main .info p{
+        font-size: 11px;
+    }
+    main .info div{
+        padding-left: 24px;
+    }
+    main .info h1{
+        font-size: 30px;
+        padding-top: 45px;
+    }
+    main .info img{
+        height: 34px;
+        width: 34px;
+        padding-top: 35px;
+    }
+}
+
+@media (max-width: 995px) {
+    main .about{
+        padding-top: 50px;
+    }
+    main .about h1{
+        font-size: 16px;
+    }
+    main .info p{
+        font-size: 10px;
+    }
+    main .info div{
+        padding-left: 20px;
+    }
+    main .info h1{
+        font-size: 28px;
+        padding-top: 40px;
+    }
+    main .info img{
+        height: 32px;
+        width: 32px;
+        padding-top: 30px;
+        padding-bottom: 5px;
+    }
+    main .pc_choice{
+        padding: 13px 36px;
+        font-size: 14px;
+        margin: 50px auto 65px;
+    }
+}
+
+@media (max-width: 907px){
+    main .info{
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0 18px;
+    }
+    main .about{
+        padding-top: 70px;
+    }
+    main .about h1{
+        font-size: 24px;
+    }
+    main .info p{
+        font-size: 14px;
+    }
+    main .info div{
+        padding-left: 36px;
+    }
+    main .info h1{
+        font-size: 34px;
+        padding-top: 60px;
+    }
+    main .info img{
+        height: 45px;
+        width: 45px;
+        padding-top: 45px;
+    }
+}
+
+@media (max-width: 700px) {
+    main .info{
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0 17px;
+    }
+    main .about{
+        padding-top: 65px;
+    }
+    main .about h1{
+        font-size: 20px;
+    }
+    main .info p{
+        font-size: 13px;
+    }
+    main .info div{
+        padding-left: 32px;
+    }
+    main .info h1{
+        font-size: 32px;
+        padding-top: 55px;
+    }
+    main .info img{
+        height: 40px;
+        width: 40px;
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 650px) {
+    main .info{
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0 16px;
+    }
+    main .about{
+        padding-top: 55px;
+    }
+    main .about h1{
+        font-size: 18px;
+    }
+    main .info p{
+        font-size: 11px;
+    }
+    main .info div{
+        padding-left: 24px;
+    }
+    main .info h1{
+        font-size: 30px;
+        padding-top: 45px;
+    }
+    main .info img{
+        height: 34px;
+        width: 34px;
+        padding-top: 35px;
+        padding-bottom: 3px;
+    }
+    main .pc_choice{
+        padding: 16px 50px;
+        font-size: 14px;
+        margin: 35px auto 55px;
+    }
+}
+
+@media (max-width: 560px) {
+    main .info{
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0 15px;
+    }
+    main .about{
+        padding-top: 40px;
+    }
+    main .about h1{
+        font-size: 15px;
+    }
+    main .info p{
+        font-size: 9px;
+    }
+    main .info div{
+        padding-left: 20px;
+    }
+    main .info h1{
+        font-size: 28px;
+        padding-top: 40px;
+    }
+    main .info img{
+        height: 30px;
+        width: 30px;
+        padding-top: 30px;
+    }
+    main .pc_choice{
+
+    }
+}
+
+@media (max-width: 470px) {
+    main .info{
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    main .about{
+        padding-top: 35px;
+    }
+    main .about h1{
+        font-size: 12px;
+    }
+    main .info p{
+        font-size: 7px;
+    }
+    main .info div{
+        padding-left: 20px;
+    }
+    main .info h1{
+        font-size: 24px;
+        padding-top: 35px;
+    }
+    main .info img{
+        height: 25px;
+        width: 25px;
+        padding-top: 25px;
+        padding-bottom: 3px;
+    }
+    main .pc_choice{
+
+    }
+}
+
+main .button2{
+    display: flex;
+    flex-flow: row;
+    background-color: #161616;
+}
+
+main .about_us{
+    background-color: #303030;
+    border: none;
+    color: white;
+    padding: 16px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    justify-content: center;
+    font-size: 14px;
+    margin: 10px auto 75px;
+    font-weight: bold;
+}
+
+main .about_us a{
+    color: white;
+}
+
+main .about_us a:hover{
+    opacity: 0.8;
+}
+
+main .why{
+    background-color: #161616;
+    height: auto;
+}
+
+main .why h1{
+    padding-top: 75px;
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+}
+
+main .why_are_we{
+    background-color: #161616;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 50px 100px;
+}
+
+main .why_are_we div{
+    display: flex;
+    flex-flow: column;
+    height: 380px;
+    width: 350px;
+    background-color: #303030;
+}
+
+main .why_are_we h1{
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+main .why_are_we p{
+    padding-top: 3px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+main .why_are_we img{
+    height: 190px;
+    width: 350px;
+}
+
+@media (max-width: 1300px){
+    main .why h1{
+        padding-top: 65px;
+        font-size: 24px;
+    }
+    main .why_are_we img{
+        height: 150px;
+        width: 310px;
+    }
+    main .why_are_we div{
+        height: 300px;
+        width: 310px;
+    }
+    main .why_are_we{
+        padding: 40px 100px;
+    }
+    main .why_are_we p{
+        font-size: 12px;
+    }
+    main .why_are_we h1{
+        font-size: 16px;
+    }
+    main .about_us{
+        padding: 16px 50px;
+        font-size: 14px;
+        margin: 10px auto 65px;
+    }
+}
+
+@media (max-width: 1200px){
+    main .why h1{
+        padding-top: 55px;
+        font-size: 24px;
+    }
+    main .why_are_we img{
+        height: 110px;
+        width: 270px;
+    }
+    main .why_are_we div{
+        height: 220px;
+        width: 270px;
+    }
+    main .why_are_we{
+        padding: 40px 100px;
+    }
+    main .why_are_we p{
+        font-size: 10px;
+    }
+    main .why_are_we h1{
+        font-size: 14px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    main .about_us{
+        padding: 14px 46px;
+        font-size: 12px;
+        margin: 10px auto 55px;
+    }
+}
+
+@media (max-width: 1050px){
+    main .why h1{
+        padding-top: 65px;
+        font-size: 24px;
+    }
+    main .why_are_we img{
+        height: 150px;
+        width: 310px;
+    }
+    main .why_are_we div{
+        border: 10px solid #161616;
+        height: 300px;
+        width: 310px;
+    }
+    main .why_are_we{
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: 40px 100px;
+    }
+    main .why_are_we p{
+        font-size: 12px;
+    }
+    main .why_are_we h1{
+        font-size: 16px;
+    }
+    main .about_us{
+        padding: 16px 50px;
+        font-size: 14px;
+        margin: 0 auto 65px;
+    }
+}
+
+@media (max-width: 400px) {
+    main .why_are_we{
+        padding: 30px 25px;
+    }
+    main .why h1{
+        padding-top: 60px;
+        font-size: 24px;
+    }
+    main .why_are_we img{
+        height: 125px;
+        width: 275px;
+    }
+    main .why_are_we div{
+        border: 10px solid #161616;
+        height: 250px;
+        width: 275px;
+    }
+    main .why_are_we p{
+        font-size: 10px;
+    }
+    main .why_are_we h1{
+        font-size: 12px;
+    }
+    main .about_us{
+        padding: 16px 50px;
+        font-size: 14px;
+        margin: 0 auto 60px;
+    }
+}
+
+main .products{
+    background-color: #303030;
+    height: auto;
+
+}
+
+main .products h1{
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    padding-bottom: 50px;
+}
+
+main .rate{
+    border-left: 1px solid #161616;
+    border-right: 1px solid #161616;
+    border-top: 1px solid #161616;
+    padding: 0 10px 20px 10px;
+    height: auto;
+}
+
+main .rate p {
+    color: white;
+    font-size: 15px;
+    padding: 15px 0 15px 0;
+}
+main .meter {
+    height: 10px;
+    position: relative;
+    background: white;
+    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+main .meter span {
+    display: block;
+    height: 100%;
+    background-color: #F50F0F;
+    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+main .products_info{
+    display: flex;
+    flex-flow: row;
+    background-color: #303030;
+    height: auto;
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 70px;
+}
+
+main .products_info div{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+main .products_img{
+    border-left: 1px solid #161616;
+    border-right: 1px solid #161616;
+    border-top: 1px solid #161616;
+    padding: 10px 50px;
+    width: 200px;
+}
+
+main .products_info div h1{
+    border-left: 1px solid #161616;
+    border-right: 1px solid #161616;
+    border-top: 1px solid #161616;
+    width: 300px;
+    height: 70px;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+}
+
+main .products_info .block{
+    border-left: 1px solid #161616;
+    border-right: 1px solid #161616;
+    border-top: 1px solid #161616;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    padding: 18px 13px;
+}
+
+main .block img{
+    height: 36px;
+    width: 36px;
+}
+
+main .products_info .block div{
+    display: flex;
+    flex-flow: column;
+    padding: 0 15px;
+}
+
+main .products_info .block div p{
+    color: white;
+    font-size: 13px;
+}
+
+main .button3{
+    background-color: #303030;
+    border-left: 1px solid #161616;
+    border-right: 1px solid #161616;
+    border-top: 1px solid #161616;
+    border-bottom: 1px solid #161616;
+}
+
+main .pc_buy{
+    background-color: #F50F0F;
+    border: none;
+    color: white;
+    padding: 13px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    justify-content: center;
+    font-size: 14px;
+    margin: 20px auto 20px;
+    font-weight: bold;
+}
+
+main .pc_buy a{
+    color: white;
+}
+
+main .pc_buy a:hover{
+    opacity: 0.8;
+}
+
+@media (max-width: 800px) {
+    main{
+        padding-top: 75px;
+    }
+}
+
+@media (max-width: 600px) {
+    main{
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 1350px){
+    main .products_info{
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+}
+
+@media (max-width: 1300px){
+    main .products_info{
+        padding-left: 160px;
+        padding-right: 160px;
+    }
+}
+
+@media (max-width: 1250px){
+    main .products_info{
+        padding-left: 140px;
+        padding-right: 140px;
+    }
+}
+
+@media (max-width: 1200px){
+    main .products_info{
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+}
+
+@media (max-width: 1150px){
+    main .products h1{
+        font-size: 20px;
+    }
+
+    main .rate p {
+        font-size: 12px;
+    }
+
+    main .products_info{
+        padding-left: 160px;
+        padding-right: 160px;
+        padding-bottom: 70px;
+    }
+
+    main .products_info div{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
+    main .products_img{
+        width: 150px;
+    }
+
+    main .products_info div h1{
+        width: 250px;
+        height: 65px;
+        font-size: 30px;
+    }
+
+    main .block img{
+        height: 30px;
+        width: 30px;
+    }
+
+    main .products_info .block div p{
+        font-size: 10px;
+    }
+
+    main .pc_buy{
+        padding: 10px 32px;
+        font-size: 12px;
+        margin: 20px auto 20px;
+    }
+}
+
+@media (max-width: 1100px){
+    main .products_info{
+        padding-left: 140px;
+        padding-right: 140px;
+    }
+}
+
+@media (max-width: 1060px){
+    main .products_info{
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+}
+
+@media (max-width: 1030px){
+    main .products_info{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media (max-width: 1000px) {
+    main .products h1{
+        font-size: 24px;
+    }
+
+    main .rate p {
+        font-size: 15px;
+    }
+
+    main .products_info{
+        flex-flow: column;
+        align-items: center;
+        padding-left: 160px;
+        padding-right: 160px;
+        padding-bottom: 70px;
+    }
+
+    main .products_img{
+        width: 200px;
+    }
+
+    main .products_info div h1{
+        width: 300px;
+        height: 65px;
+        font-size: 30px;
+    }
+
+    main .block img{
+        height: 36px;
+        width: 36px;
+    }
+
+    main .products_info .block div p{
+        font-size: 13px;
+    }
+
+    main .pc_buy{
+        padding: 13px 35px;
+        font-size: 14px;
+        margin: 20px auto 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    main .products h1{
+        font-size: 20px;
+    }
+
+    main .rate p {
+        font-size: 12px;
+    }
+
+    main .products_info{
+        flex-flow: column;
+        align-items: center;
+        padding-left: 160px;
+        padding-right: 160px;
+        padding-bottom: 70px;
+    }
+
+    main .products_img{
+        width: 150px;
+    }
+
+    main .products_info div h1{
+        width: 250px;
+        height: 65px;
+        font-size: 30px;
+    }
+
+    main .block img{
+        height: 30px;
+        width: 30px;
+    }
+
+    main .products_info .block div p{
+        font-size: 10px;
+    }
+
+    main .pc_buy{
+        padding: 10px 32px;
+        font-size: 12px;
+        margin: 20px auto 20px;
+    }
+}
+
+footer{
+    height: 200px;
+    background-color: #161616;
+}
+
+footer div{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+footer div h2{
+    color: white;
+    font-size: 20px;
+    padding: 40px 100px 0 100px;
+}
+
+footer .social{
+    padding: 0 90px;
+}
+
+footer .social img{
+    height: 40px;
+    width: 40px;
+    padding: 30px 10px;
+}
+
+footer .status img{
+    height: 40px;
+    width: 100px;
+    padding: 30px 10px;
+}
+
+footer .contacts{
+    display: flex;
+    flex-flow: column;
+    padding-right: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer .contacts p{
+    text-align: right;
+    color: white;
+    font-size: 13px;
+}
+
+#footer_adaptive{
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    footer{
+        display: none;
+    }
+    #footer_adaptive{
+        display: block
+    }
+}
+
+@media (max-width: 800px) {
+    #footer_adaptive{
+        height: 165px;
+    }
+    #footer_adaptive div h2{
+        font-size: 18px;
+        padding: 30px 75px 0 75px;
+    }
+    #footer_adaptive div .social{
+        padding: 0 65px;
+    }
+    #footer_adaptive div .social img{
+        height: 35px;
+        width: 35px;
+        padding: 20px 8px;
+    }
+    #footer_adaptive div .contacts{
+        padding-right: 75px;
+        padding-top: 20px;
+    }
+    #footer_adaptive div .contacts p{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 600px) {
+    #footer_adaptive{
+        height: 135px;
+    }
+    #footer_adaptive div h2{
+        font-size: 15px;
+        padding: 35px 50px 0 50px;
+    }
+    #footer_adaptive div .social{
+        padding: 0 50px;
+    }
+    #footer_adaptive div .social img{
+        height: 25px;
+        width: 25px;
+        padding: 10px 8px;
+    }
+    #footer_adaptive div .contacts{
+        padding-right: 50px;
+        padding-top: 10px;
+    }
+    #footer_adaptive div .contacts p{
+        font-size: 9px;
+    }
+}

@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins|Press+Start+2P&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    outline: none;
+    text-decoration: none;
+}
+
+
+body, html{
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    padding: 0 100px;
+    height: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s all;
+    position: fixed;
+    z-index: 9999;
+    background-color: #303030;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid black;
+}
+
+header .logo a{
+    color: white;
+    font-family: 'Press Start 2p', sans-serif;
+    font-size: 25px;
+}
+
+header a:hover{
+    opacity: 0.8;
+}
+
+header nav{
+    display: flex;
+    padding-bottom: 4px;
+}
+
+header .item{
+    padding-left: 30px;
+}
+
+header .item span{
+    font-size: 19px;
+    color: white;
+}
+
+#header_adaptive{
+    padding: 0 100px;
+    height: 100px;
+    display: none;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s all;
+    position: fixed;
+    z-index: 9999;
+    background-color: #303030;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid black;
+}
+
+#header_adaptive .menu{
+    display: none;
+}
+
+@media (max-width: 1260px) {
+    header{
+        display: none;
+    }
+    #header_adaptive{
+        display: flex;
+    }
+}
+
+@media (max-width: 800px){
+    #header_adaptive{
+        height: 75px;
+        padding: 0 60px;
+    }
+    #header_adaptive .logo a{
+        font-size: 20px;
+    }
+    #header_adaptive .item span{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    #header_adaptive{
+        height: 50px;
+        padding: 0 30px;
+    }
+    #header_adaptive .logo a{
+        font-size: 16px
+    }
+    #header_adaptive .item span{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 450px){
+    #header_adaptive nav{
+        display: none;
+    }
+    #header_adaptive .menu{
+        display: flex;
+    }
+}
+
+main{
+    padding-top: 100px;
+    transition: 1s all;
+}
+
+main .company{
+    transition: 1s all;
+    height: auto;
+    background-color: #161616;
+    padding: 50px 100px 100px 100px;
+}
+
+main .company h1 {
+    transition: 1s all;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    text-align: center;
+    color: white;
+    padding-bottom: 40px;
+}
+
+main .company p{
+    transition: 1s all;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    padding-top: 3px;
+}
+
+main .company1{
+    transition: 1s all;
+    display: none;
+    height: auto;
+    background-color: #161616;
+    padding: 50px 100px 100px 100px;
+}
+
+main .company1 h1 {
+    transition: 1s all;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    text-align: left;
+    color: white;
+    padding-bottom: 40px;
+}
+
+main .company1 p{
+    transition: 1s all;
+    font-size: 16px;
+    text-align: left;
+    color: white;
+    padding-top: 3px;
+}
+
+main .why1{
+    transition: 1s all;
+    display: none;
+    padding: 100px 100px;
+    height: auto;
+    background-color: #303030;
+}
+
+main .why1 div h1{
+    transition: 1s all;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    color: white;
+    padding-bottom: 20px;
+}
+
+main .why1 div p{
+    transition: 1s all;
+    font-size: 14px;
+    text-align: left;
+    color: white;
+    padding-top: 3px;
+}
+
+main .why1 img{
+    transition: 1s all;
+    width: 400px;
+    height: 250px;
+}
+
+main .why{
+    transition: 1s all;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 100px 100px;
+    height: auto;
+    background-color: #303030;
+}
+
+main .why div h1{
+    transition: 1s all;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    text-align: left;
+    color: white;
+    padding-bottom: 40px;
+}
+
+main .why div p{
+    transition: 1s all;
+    font-size: 16px;
+    text-align: left;
+    color: white;
+    padding-top: 3px;
+}
+
+@media (max-width: 1250px) {
+    main .why img{
+        width: 500px;
+    }
+}
+
+@media (max-width: 1150px) {
+    main .why{
+        display: none;
+    }
+    main .why1{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 1100px) {
+    main .company{
+        display: none;
+    }
+
+    main .company1 {
+        display: block;
+    }
+    main .why1{
+        flex-flow: column;
+    }
+    main .why1 img{
+        padding-top: 50px;
+        height: 100%;
+        width: 100%;
+    }
+    main .why1 div h1{
+        font-size: 26px;
+        padding-bottom: 40px;
+    }
+
+    main .why1 div p{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 800px) {
+    main{
+        padding-top: 75px
+    }
+    main .company1{
+        padding: 50px 70px 70px 70px;
+    }
+
+    main .company1 h1 {
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+
+    main .company1 p{
+        font-size: 12px;
+    }
+
+    main .why1{
+        padding: 50px 70px 70px 70px;
+    }
+
+    main .why1 div h1{
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+
+    main .why1 div p{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    main{
+        padding-top: 50px
+    }
+    main .company1{
+        padding: 30px 30px
+    }
+
+    main .company1 h1 {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+
+    main .company1 p{
+        font-size: 10px;
+    }
+
+    main .why1{
+        padding: 30px 30px;
+    }
+
+    main .why1 div h1{
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+
+    main .why1 div p{
+        font-size: 10px;
+    }
+
+    main .why1 img{
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    main .company1 h1 {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+
+    main .company1 p{
+        font-size: 7px;
+        padding-top: 2px;
+    }
+    main .why1 div h1{
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+
+    main .why1 div p{
+        font-size: 7px;
+        padding-top: 2px;
+    }
+    main .why1 img{
+        padding-top: 20px;
+    }
+}
+
+footer div{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+footer div h2{
+    color: white;
+    font-size: 20px;
+    padding: 40px 100px 0 100px;
+}
+
+footer div h3{
+    color: white;
+    font-size: 20px;
+    padding: 40px 185px 0 100px;
+}
+
+footer{
+    height: 200px;
+    background-color: #161616;
+}
+
+footer .social{
+    padding: 0 90px;
+}
+
+footer .social img{
+    height: 40px;
+    width: 40px;
+    padding: 30px 10px;
+}
+
+footer .status{
+    padding-right: 100px;
+}
+
+footer .status img{
+    height: 40px;
+    width: 100px;
+    padding: 30px 10px;
+}
+
+footer .contacts{
+    display: flex;
+    flex-flow: column;
+    padding-right: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer .contacts p{
+    text-align: right;
+    color: white;
+    font-size: 13px;
+}
+
+#footer_adaptive{
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    footer{
+        display: none;
+    }
+    #footer_adaptive{
+        display: block
+    }
+}
+
+@media (max-width: 800px) {
+    #footer_adaptive{
+        height: 165px;
+    }
+    #footer_adaptive div h2{
+        font-size: 18px;
+        padding: 30px 75px 0 75px;
+    }
+    #footer_adaptive div .social{
+        padding: 0 65px;
+    }
+    #footer_adaptive div .social img{
+        height: 35px;
+        width: 35px;
+        padding: 20px 8px;
+    }
+    #footer_adaptive div .contacts{
+        padding-right: 75px;
+        padding-top: 20px;
+    }
+    #footer_adaptive div .contacts p{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 600px) {
+    #footer_adaptive{
+        height: 135px;
+    }
+    #footer_adaptive div h2{
+        font-size: 15px;
+        padding: 35px 50px 0 50px;
+    }
+    #footer_adaptive div .social{
+        padding: 0 50px;
+    }
+    #footer_adaptive div .social img{
+        height: 25px;
+        width: 25px;
+        padding: 10px 8px;
+    }
+    #footer_adaptive div .contacts{
+        padding-right: 50px;
+        padding-top: 10px;
+    }
+    #footer_adaptive div .contacts p{
+        font-size: 9px;
+    }
+}
